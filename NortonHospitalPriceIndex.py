@@ -2,10 +2,11 @@ import requests
 import json
 import pandas as pd
 
-csv_write = r'C:\\Users\\jackb\Desktop\\FileOpen\\json_data_Norton.csv'
+csv_write = r'LOCAL HERE'
 url = "https://api.hospitalpriceindex.com/itemList/list"
 
-payload = "{\"defId\":8160,\"priceStatus\":\"published\",\"page\":{\"from\":1,\"size\":50},\"sortInput\":[{\"reverse\":false,\"by\":\"description\"}],\"listName\":\"priceList\",\"filters\":[{\"property\":\"description\",\"value\":\"\",\"type\":\"all\"}]}"
+
+payload = "{\"defId\":8160,\"priceStatus\":\"published\",\"page\":{\"from\":1,\"size\":84900},\"sortInput\":[{\"reverse\":false,\"by\":\"description\"}],\"listName\":\"priceList\",\"filters\":[{\"property\":\"description\",\"value\":\"\",\"type\":\"all\"}]}"
 headers = {
     'authority': 'api.hospitalpriceindex.com',
     'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
